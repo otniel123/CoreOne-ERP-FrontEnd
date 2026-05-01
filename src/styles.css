@@ -1,5 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-
+:root {
+  --navy-deep: #0D1F4E;
+  --royal-blue: #1B4FD8;
+  --electric-blue: #4C82FF;
+  --steel-light: #EEF2FF;
+  --white: #FFFFFF;
+  --gray-text: #64748B;
+  --white-error: #FEF2F2;
+  --red-error: #DC2626;
+  --danger: #EF4444;
+  --danger-hover: #F87171;
+}
 * {
   margin: 0;
   padding: 0;

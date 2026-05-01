@@ -1,1 +1,6 @@
-<app-login/>
+@if(!cadastrandoUsuario){
+    <app-login (cadastrarUsuario)="setCadastrarUsuarioTrue()"/>
+}
+@else{
+    <p>Página em construção(Aqui vai o componente para o usuário se cadastrar)</p>
+}
