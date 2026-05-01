@@ -6,4 +6,22 @@ import { Component } from '@angular/core';
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
-export class Login {}
+export class Login {
+  email ?: string;
+  password ?: string;
+
+  onInputEmail(event: Event){
+    const input = event.target as HTMLInputElement;
+    this.email = input.value;
+  }
+
+  onInputPassword(event: Event){
+    const input = event.target as HTMLInputElement;
+    this.password = input.value;
+  }
+
+  onLogin(event: Event){
+    event.preventDefault();
+    alert(this.email + " " +this.password);
+  }
+}
