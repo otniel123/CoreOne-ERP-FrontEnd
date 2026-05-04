@@ -1,0 +1,80 @@
+:host {
+  --navy-deep: #0D1F4E;
+  --royal-blue: #1B4FD8;
+  --electric-blue: #4C82FF;
+  --steel-light: #EEF2FF;
+  --white: #FFFFFF;
+  --gray-text: #64748B;
+
+  display: block;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dashboard-page {
+  min-height: 100vh;
+  background: var(--steel-light);
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  margin: 0 0 24px;
+  color: var(--navy-deep);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.summary-card {
+  flex: 1 1 220px;
+  min-width: 220px;
+  background: var(--white);
+  border-top: 4px solid var(--royal-blue);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(13, 31, 78, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s, border-top-color 0.2s;
+  cursor: default;
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  border-top-color: var(--electric-blue);
+  box-shadow: 0 6px 16px rgba(76, 130, 255, 0.18);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.card-title {
+  color: var(--gray-text);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.card-emoji {
+  font-size: 20px;
+}
+
+.card-value {
+  margin: 12px 0 0;
+  color: var(--navy-deep);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.future-section {
+  margin-top: 32px;
+  min-height: 200px;
+}

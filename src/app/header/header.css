@@ -1,0 +1,71 @@
+:host {
+  --navy-deep: #0D1F4E;
+  --royal-blue: #1B4FD8;
+  --electric-blue: #4C82FF;
+  --white: #FFFFFF;
+  --gray-text: #64748B;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0 24px;
+  background: var(--navy-deep);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--electric-blue);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--electric-blue);
+}
+
+.brand {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-name {
+  color: var(--gray-text);
+  font-size: 14px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.logout-button:hover {
+  background: var(--royal-blue);
+  border-color: var(--royal-blue);
+}

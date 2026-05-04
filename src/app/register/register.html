@@ -1,0 +1,33 @@
+<section class="register-page">
+  <div class="register-card">
+    <div class="register-header">
+      <div class="logo"></div>
+      <h1 class="brand">CoreOne ERP</h1>
+    </div>
+
+    <p class="subtitle">Criar conta</p>
+
+    <form class="register-form" (ngSubmit)="onSubmit()">
+      <label class="field">
+        <span>Usuário</span>
+        <input type="text" name="username" placeholder="Seu nome de usuário" />
+      </label>
+
+      <label class="field">
+        <span>E-mail</span>
+        <input type="email" name="email" placeholder="seu@email.com" />
+      </label>
+
+      <label class="field">
+        <span>Senha</span>
+        <input type="password" name="password" placeholder="••••••••" />
+      </label>
+
+      <button type="submit" class="submit-button">Cadastrar</button>
+    </form>
+
+    <p class="login-link">
+      Já tem conta? <a href="#">Entrar</a>
+    </p>
+  </div>
+</section>

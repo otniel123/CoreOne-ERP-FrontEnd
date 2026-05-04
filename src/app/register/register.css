@@ -1,0 +1,130 @@
+:host {
+  --navy-deep: #0D1F4E;
+  --royal-blue: #1B4FD8;
+  --electric-blue: #4C82FF;
+  --steel-light: #EEF2FF;
+  --white: #FFFFFF;
+  --gray-text: #64748B;
+}
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--navy-deep);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.register-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: var(--royal-blue);
+}
+
+.brand {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy-deep);
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  font-size: 15px;
+  color: var(--gray-text);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-text);
+}
+
+.field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--steel-light);
+  background: var(--steel-light);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--navy-deep);
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.field input::placeholder {
+  color: var(--gray-text);
+}
+
+.field input:focus {
+  outline: none;
+  background: var(--white);
+  border-color: var(--royal-blue);
+  box-shadow: 0 0 0 3px rgba(76, 130, 255, 0.25);
+}
+
+.submit-button {
+  margin-top: 6px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--royal-blue);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-button:hover {
+  background: var(--electric-blue);
+}
+
+.login-link {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray-text);
+}
+
+.login-link a {
+  color: var(--royal-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  color: var(--electric-blue);
+  text-decoration: underline;
+}
