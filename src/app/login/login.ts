@@ -62,7 +62,7 @@ export class Login {
   }
 
   clickBotaoCadastrarUsuario(){
-    this.cadastrarUsuario.emit(true);
+    this.cadastrarUsuario.emit();
   }
 
   onLogout(){

@@ -20,3 +20,18 @@
 body {
   min-height: 100vh;
 }
+
+
+/* ==================== CLASSES GLOBAIS =================== */
+
+.errorMessage{
+  background-color: var(--white-error);
+  padding: 5px;
+  color:var(--red-error);
+  font-weight: 500;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
